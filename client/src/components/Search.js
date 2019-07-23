@@ -1,8 +1,12 @@
 import React from 'react'
+import PageTitle from './PageTitle'
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <div>
+      <PageTitle title='Search Books' />
+
+    </div>
   )
 }
 

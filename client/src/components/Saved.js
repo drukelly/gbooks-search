@@ -1,8 +1,11 @@
 import React from 'react'
+import PageTitle from './PageTitle'
 
 const Saved = () => {
   return (
-    <div>Saved</div>
+    <div>
+      <PageTitle title='Saved Books' />
+    </div>
   )
 }
 
