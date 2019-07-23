@@ -1,17 +1,26 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styled from 'tachyons-components'
-import Nav from './components/Nav'
+import Nav from './components/NavItems'
+import Home from './components/Home'
+import Search from './components/Search'
+import Saved from './components/Saved'
 
-const Wrapper = styled('section')`
+const Navigation = styled('section')`
   bg-light-yellow
-  ma0 ph4 pv3
+  ma0 pa3
 `
 
 const App = () => {
   return (
-    <Wrapper>
-      <Nav />
-    </Wrapper>
+    <Router>
+      <Navigation>
+        <Nav />
+      </Navigation>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/search' component={Search} />
+        <Route exact path='/saved' component={Saved} />
+    </Router>
   )
 }
 
