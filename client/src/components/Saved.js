@@ -5,6 +5,7 @@ const Saved = () => {
   return (
     <div>
       <PageTitle title='Saved Books' />
+      <p>No saved books.</p>
     </div>
   )
 }

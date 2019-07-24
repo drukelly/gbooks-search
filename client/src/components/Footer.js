@@ -2,18 +2,18 @@ import React from 'react'
 import styled from 'tachyons-components'
 
 const Wrapper = styled('footer')`
-  bg-light-yellow
-  f7
-  flex
-  ma0
-  pa3
+bg-orange
+f7
+ma0
+pa3
+tr
 `
 
 const Footer = props => {
   return (
     <Wrapper>
-      <a href={`${props.portfolio}`} className='link mr3 near-black' target='_blank' rel='noopener noreferrer'>{props.name}</a>
-      <a href={`https://www.github.com/${props.github}/${props.repo}`} target='_blank' rel='noopener noreferrer' className='link near-black'>Repo</a>
+      <a href={`${props.portfolio}`} className='dib mr2 link near-black' target='_blank' rel='noopener noreferrer'>{props.name}</a>
+      <a href={`https://www.github.com/${props.github}/${props.repo}`} target='_blank' rel='noopener noreferrer' className='dib link near-black'>Github Repo</a>
     </Wrapper>
   )
 }

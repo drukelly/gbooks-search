@@ -8,22 +8,23 @@ import Saved from './components/Saved'
 import Footer from './components/Footer'
 
 const Flex = styled('div')`
-  f7
-  flex flex-column
-  min-vh-100
-  sans-serif
+flex
+flex-column
+min-vh-100
+sans-serif
 `
 
 const Navigation = styled('section')`
-  bg-light-yellow
-  ma0
-  pa3
+bg-orange
+ma0
+pa3
 `
 
 const Wrapper = styled('section')`
-  flex-auto
-  ma0
-  pa3
+content-box
+flex-auto
+ma0
+pa3
 `
 
 const App = () => {
